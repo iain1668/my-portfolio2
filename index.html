@@ -17,23 +17,23 @@
         header {
             background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
             color: white;
-            padding: 3rem 0;
+            padding: 3rem 1rem;
             text-align: center;
             border-radius: 0 0 30px 30px;
         }
         header h1 {
             margin: 0;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 700;
             font-family: 'Playfair Display', serif;
         }
         header p {
-            font-size: 1.25rem;
+            font-size: 1rem;
             margin: 0.5rem 0 0;
         }
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             background-color: #feb47b;
             padding: 1rem 0;
             border-bottom: 2px solid #ff7e5f;
@@ -41,15 +41,14 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 1.5rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: color 0.3s;
         }
         nav a:hover {
             color: #ff7e5f;
         }
         .content {
-            padding: 3rem;
+            padding: 2rem 1rem;
             max-width: 1000px;
             margin: 2rem auto;
             background: white;
@@ -61,7 +60,7 @@
         }
         .section h2 {
             margin-top: 0;
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #ff7e5f;
             border-bottom: 2px solid #feb47b;
             padding-bottom: 0.5rem;
@@ -73,19 +72,19 @@
             flex-wrap: wrap;
         }
         .about-content img {
-            width: 180px;
-            height: 180px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            margin-right: 2rem;
+            margin-right: 1rem;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .section p, .section ul {
             line-height: 1.6;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         footer {
             text-align: center;
-            padding: 1.5rem 0;
+            padding: 1.5rem 1rem;
             background-color: #ff7e5f;
             color: white;
             border-top: 4px solid #feb47b;
@@ -124,6 +123,53 @@
         .social-icons a:hover {
             color: #ff7e5f;
         }
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .video {
+            flex: 1 1 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .video iframe {
+            width: 100%;
+            height: 200px;
+        }
+        .video p {
+            padding: 1rem;
+            margin: 0;
+        }
+        @media (min-width: 600px) {
+            header h1 {
+                font-size: 3rem;
+            }
+            header p {
+                font-size: 1.25rem;
+            }
+            nav a {
+                font-size: 1.1rem;
+            }
+            .content {
+                padding: 3rem;
+            }
+            .section h2 {
+                font-size: 2rem;
+            }
+            .about-content img {
+                width: 180px;
+                height: 180px;
+                margin-right: 2rem;
+            }
+            .section p, .section ul {
+                font-size: 1.1rem;
+            }
+            .video iframe {
+                height: 315px;
+            }
+        }
     </style>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -137,6 +183,7 @@
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#achievements">Achievements</a>
+        <a href="#videos">Videos</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="content">
@@ -275,6 +322,27 @@
                 <p>My supervisors always say I see the silver lining in things and have strong teamwork and mentoring skills. I foster a harmonious workplace by being respectful and supportive.</p>
             </div>
         </section>
+        <section id="videos" class="section">
+            <h2>Videos</h2>
+            <div class="video-section">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+                    <p>Introduction Video</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+                    <p>Project Highlight: [Project Name]</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+                    <p>Testimonial from [Colleague/Client Name]</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+                    <p>Industry Insights</p>
+                </div>
+            </div>
+        </section>
         <section id="contact" class="section">
             <h2>Contact</h2>
             <p>Feel free to reach out to me for professional inquiries or collaborations.</p>
@@ -297,6 +365,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
