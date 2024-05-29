@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iain Winter - Professional Portfolio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Playfair+Display:wght@700&display=swap');
+        
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f0f4f8;
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f9f9f9;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #007acc;
+            background: url('header-bg.jpg') no-repeat center center/cover;
             color: white;
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
-            border-bottom: 4px solid #005f99;
+            border-bottom: 4px solid #007acc;
             border-radius: 0 0 30px 30px;
         }
         header h1 {
             margin: 0;
             font-size: 3rem;
-            font-weight: 300;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
         }
         header p {
             font-size: 1.25rem;
@@ -32,7 +35,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #005f99;
+            background-color: #007acc;
             padding: 1rem 0;
         }
         nav a {
@@ -40,9 +43,10 @@
             text-decoration: none;
             margin: 0 1.5rem;
             font-size: 1.1rem;
+            transition: color 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #ffd700;
         }
         .content {
             padding: 3rem;
@@ -61,6 +65,7 @@
             color: #007acc;
             border-bottom: 2px solid #005f99;
             padding-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
         }
         .about-content {
             display: flex;
@@ -101,11 +106,26 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 1rem;
+            transition: background-color 0.3s;
         }
         .contact-form button:hover {
             background-color: #005f99;
         }
+        .social-icons {
+            margin-top: 1rem;
+        }
+        .social-icons a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ffd700;
+        }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -127,7 +147,7 @@
                     <h2>About Me</h2>
                     <p>Hello, I am Iain Winter. I have a passion for helping people, whether it’s improving their health and fitness or guiding them to achieve their best selves. Originally from Scotland, I moved to Australia at the age of 24 to seek new opportunities.</p>
                     <p>With over 15 years of experience in the sports nutrition industry, I reached a ceiling and sought further growth by joining tier 1 companies. My journey took me to Canon, where I worked with some of the best professionals in the industry, and then to Hilti, where I faced new challenges.</p>
-                    <p>Outside of work, I have dedicated over 23 years to training and in recent years I've moved into the art of Brazilian Jiu-Jitsu (no-gi), which has instilled in me a deep sense of discipline and dedication. My professional ethos is driven by a commitment to continuous improvement and making a meaningful impact.</p>
+                    <p>Outside of work, I have dedicated over 23 years to training in Brazilian Jiu-Jitsu (no-gi), which has instilled in me a deep sense of discipline and dedication. My professional ethos is driven by a commitment to continuous improvement and making a meaningful impact.</p>
                     <p>Throughout my career, I have mentored hundreds of staff, developed advanced reporting tools, and been recognized as a pioneer in the sports nutrition industry in Western Australia. My assertive yet understanding approach has helped many colleagues grow and excel.</p>
                     <p>I am now looking to transition into a role where I can help people more directly, leveraging my experience and passion for making a positive difference in their lives.</p>
                 </div>
@@ -260,12 +280,16 @@
             <p>Feel free to reach out to me for professional inquiries or collaborations.</p>
             <p>Email: iain.winter@example.com</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/iainwinter" target="_blank">linkedin.com/in/iainwinter</a></p>
-            <form class="contact-form" action="mailto:iain1668@gmail.com" method="post" enctype="text/plain">
+            <form class="contact-form" action="mailto:iain.winter@example.com" method="post" enctype="text/plain">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/iainwinter" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:iain.winter@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </section>
     </div>
     <footer>
@@ -273,4 +297,5 @@
     </footer>
 </body>
 </html>
+
 
